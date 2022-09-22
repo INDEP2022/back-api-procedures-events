@@ -27,6 +27,8 @@ import { ValEventModule } from './modules/sera/val-event/val-event.module';
 import { DeleteEventCanModule } from './modules/sera/delete-event-can/delete-event-can.module';
 import { CleanEventModule } from './modules/sera/clean-event/clean-event.module';
 import { DeleteEventModule } from './modules/sera/delete-event/delete-event.module';
+import { UpdateFailureDateModule } from './modules/sera/update-failure-date/update-failure-date.module';
+import { QueryGeneralEventsModule } from './modules/sera/query-general-events/query-general-events.module';
 
 @Module({
   imports: [
@@ -84,6 +86,8 @@ import { DeleteEventModule } from './modules/sera/delete-event/delete-event.modu
       DeleteEventCanModule,
       CleanEventModule,
       DeleteEventModule,
+      UpdateFailureDateModule,
+      QueryGeneralEventsModule,
 //Modules
   ],
 
