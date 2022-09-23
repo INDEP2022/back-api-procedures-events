@@ -13,7 +13,6 @@ export class UpdateFailureDateService {
   }
 
   async putDate(idUpdate: number, updateFailureDateDto: UpdateFailureDateDto) {
-    console.log(updateFailureDateDto)
     const found = await this.comerEventosRepository
       .createQueryBuilder("comer_eventos")
       .update(ComerEventosEntity)
