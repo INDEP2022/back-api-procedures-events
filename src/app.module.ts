@@ -29,6 +29,7 @@ import { CleanEventModule } from './modules/sera/clean-event/clean-event.module'
 import { DeleteEventModule } from './modules/sera/delete-event/delete-event.module';
 import { UpdateFailureDateModule } from './modules/sera/update-failure-date/update-failure-date.module';
 import { QueryGeneralEventsModule } from './modules/sera/query-general-events/query-general-events.module';
+import { UpdateAssetsTempModule } from './modules/sera/update-assets-temp/update-assets-temp.module';
 
 @Module({
   imports: [
@@ -88,6 +89,7 @@ import { QueryGeneralEventsModule } from './modules/sera/query-general-events/qu
       DeleteEventModule,
       UpdateFailureDateModule,
       QueryGeneralEventsModule,
+      UpdateAssetsTempModule,
 //Modules
   ],
 
