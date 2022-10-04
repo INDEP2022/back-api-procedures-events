@@ -10,7 +10,8 @@ export class ComerBienesxloteEntity {
     goodsLoteId: number;
 
     @Column("numeric", { name: "no_bien", precision: 10, scale: 0 })
-    goodsNo: number;
+    goodsId: number;
+
 
     @Column("numeric", { name: "id_lote", precision: 10, scale: 0 })
     lotId: number;

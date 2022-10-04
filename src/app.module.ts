@@ -30,6 +30,7 @@ import { DeleteEventModule } from './modules/sera/delete-event/delete-event.modu
 import { UpdateFailureDateModule } from './modules/sera/update-failure-date/update-failure-date.module';
 import { QueryGeneralEventsModule } from './modules/sera/query-general-events/query-general-events.module';
 import { UpdateAssetsTempModule } from './modules/sera/update-assets-temp/update-assets-temp.module';
+import { SaveExcelModule } from './modules/sera/save-excel/save-excel.module';
 
 @Module({
   imports: [
@@ -90,6 +91,7 @@ import { UpdateAssetsTempModule } from './modules/sera/update-assets-temp/update
       UpdateFailureDateModule,
       QueryGeneralEventsModule,
       UpdateAssetsTempModule,
+      SaveExcelModule,
 //Modules
   ],
 
