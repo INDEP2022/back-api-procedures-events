@@ -44,7 +44,7 @@ export class ComerLotesEntity {
         precision: 7,
         scale: 0,
     })
-    idCliente: string | null;
+    clientId: string | null;
 
     @Column("numeric", {
         name: "precio_avaluo_ref",

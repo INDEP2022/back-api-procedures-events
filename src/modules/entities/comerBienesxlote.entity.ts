@@ -135,7 +135,7 @@ export class ComerBienesxloteEntity {
         precision: 15,
         scale: 2,
     })
-    noVatPrice: number | null;
+    noVatPrice: number;
 
     @Column("numeric", {
         name: "monto_app_iva",
