@@ -15,7 +15,7 @@ export class ComerLotesEntity {
     idEstatusvta: string;
 
     @Column("numeric", { name: "id_evento", precision: 7, scale: 0 })
-    eventId: string;
+    eventId: number;
 
     @Column("numeric", { name: "lote_publico", precision: 8, scale: 0 })
     publicLot: number;

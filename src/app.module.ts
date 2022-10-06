@@ -31,6 +31,7 @@ import { UpdateFailureDateModule } from './modules/sera/update-failure-date/upda
 import { QueryGeneralEventsModule } from './modules/sera/query-general-events/query-general-events.module';
 import { UpdateAssetsTempModule } from './modules/sera/update-assets-temp/update-assets-temp.module';
 import { SaveExcelModule } from './modules/sera/save-excel/save-excel.module';
+import { TemporaryFillingComerNopubModule } from './modules/sera/temporary-filling-comer-nopub/temporary-filling-comer-nopub.module';
 
 @Module({
   imports: [
@@ -92,6 +93,7 @@ import { SaveExcelModule } from './modules/sera/save-excel/save-excel.module';
       QueryGeneralEventsModule,
       UpdateAssetsTempModule,
       SaveExcelModule,
+      TemporaryFillingComerNopubModule,
 //Modules
   ],
 
