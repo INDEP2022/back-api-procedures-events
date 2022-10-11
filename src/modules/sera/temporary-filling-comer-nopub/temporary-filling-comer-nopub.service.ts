@@ -23,6 +23,12 @@ export class TemporaryFillingComerNopubService {
             .andWhere("comer_bienesxlote.lotId = comer_lotes.lotId")
             .from(ComerBienesxloteEntity, 'comer_bienesxlote')
             .getRawMany()
-        return B_EVE
+
+        console.log(B_EVE[0])
+
+        return {
+            data: B_EVE,
+            count: B_EVE.length
+        }
     }
 }
