@@ -27,7 +27,7 @@ export class ComerTpeventosEntity {
     precision: 2,
     scale: 0,
   })
-  idTipoDisp: string | null;
+  idTipoDisp: number | null;
 
   @Column("numeric", {
     name: "id_tipo_fallo",
@@ -35,6 +35,6 @@ export class ComerTpeventosEntity {
     precision: 2,
     scale: 0,
   })
-  idTipoFallo: string | null;
+  idTipoFallo: number | null;
 
 }

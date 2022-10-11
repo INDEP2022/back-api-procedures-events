@@ -11,15 +11,15 @@ export class ComerEventosTprocesoEntity {
   eventId: number;
 
   @Column("numeric", { name: "anio", nullable: true, precision: 4, scale: 0 })
-  anio: string | null;
+  year: number | null;
 
   @Column("numeric", { name: "fase", precision: 2, scale: 0 })
   stage: number;
 
   @Column("character varying", { name: "publicar", nullable: true, length: 2 })
-  publicar: string | null;
+  post: string | null;
 
-  @Column("date", { name: "fec_garantia", nullable: true })
-  fecGarantia: string | null;
+  @Column( {type: Date, name: "fec_garantia", nullable: true })
+  warrantyDate: Date | null;
 
 }

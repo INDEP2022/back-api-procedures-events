@@ -7,13 +7,13 @@ export class ComerCatcalendarEntity {
   @PrimaryGeneratedColumn({ name: "id_estatus"})
   statusId: number;
 
-  @Column({ name: "descripcion"})
+  @Column("character varying", {name: "descripcion"})
   description: string;
 
-  @Column( { name: "color"})
+  @Column("character varying", {name: "color"})
   colour: string;
 
-  @Column( { name: "activo"})
+  @Column("character varying", { name: "activo"})
   active: string;
 
 }

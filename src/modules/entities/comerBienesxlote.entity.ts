@@ -7,7 +7,7 @@ export class ComerBienesxloteEntity {
     @PrimaryGeneratedColumn({
         name: "id_bienxlote",
      })
-    goodsLoteId: number;
+    goodsLotId: number;
 
     @Column("numeric", { name: "no_bien", precision: 10, scale: 0 })
     goodsId: number;
@@ -30,7 +30,7 @@ export class ComerBienesxloteEntity {
         precision: 15,
         scale: 2,
     })
-    valuReferential: number | null;
+    valueReferential: number | null;
 
     @Column("numeric", {
         name: "precio_final",
@@ -46,7 +46,7 @@ export class ComerBienesxloteEntity {
         precision: 13,
         scale: 2,
     })
-    baseVat: number | null;
+    baseTax: number | null;
 
     @Column("numeric", {
         name: "iva_final",
@@ -55,7 +55,7 @@ export class ComerBienesxloteEntity {
         scale: 2,
         default: () => "0",
     })
-    finalVat: number | null;
+    finalTax: number | null;
 
     @Column("numeric", {
         name: "porc_iva",
@@ -63,7 +63,7 @@ export class ComerBienesxloteEntity {
         precision: 2,
         scale: 0,
     })
-    vatPercent: number | null;
+    taxPercent: number | null;
 
     @Column("character varying", { name: "campo1", nullable: true, length: 1250 })
     camp1: string | null;
@@ -135,7 +135,7 @@ export class ComerBienesxloteEntity {
         precision: 15,
         scale: 2,
     })
-    noVatPrice: number;
+    noTaxPrice: number;
 
     @Column("numeric", {
         name: "monto_app_iva",
@@ -143,7 +143,7 @@ export class ComerBienesxloteEntity {
         precision: 15,
         scale: 2,
     })
-    vatAppAmount: number | null;
+    taxAppAmount: number | null;
 
     @Column("numeric", {
         name: "monto_noapp_iva",
@@ -152,7 +152,7 @@ export class ComerBienesxloteEntity {
         scale: 2,
         default: () => "0",
     })
-    vatAmountId: number | null;
+    taxAmountId: number | null;
 
     @Column("character varying", {
         name: "estatus_ant",
@@ -338,6 +338,6 @@ export class ComerBienesxloteEntity {
     appraisalId: number | null;
 
     @Column("character varying", { name: "a_iva", nullable: true, length: 2 })
-    vatA: string | null;
+    taxA: string | null;
 
 }

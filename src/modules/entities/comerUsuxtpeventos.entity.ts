@@ -6,7 +6,7 @@ import { ApiProperty } from "@nestjs/swagger";
 export class ComerUsuxtpeventosEntity {
   @ApiProperty({example: 'No. Evento'})
   @PrimaryGeneratedColumn({ name: "id_tpevento"})
-  eventTpId: string;
+  eventTpId: number;
 
   @Column("character varying", { name: "usuario", length: 30 })
   user: string;
@@ -14,7 +14,7 @@ export class ComerUsuxtpeventosEntity {
   @Column("character varying", { name: "usuario_registro", length: 30 })
   usuarioRegistro: string;
 
-  @Column("date", { name: "fecha_registro" })
-  fechaRegistro: string;
+  @Column( {type: Date, name: "fecha_registro" })
+  fechaRegistro: Date;
 
 }
