@@ -13,7 +13,7 @@ export class ComerClientesEntity {
     @PrimaryGeneratedColumn({
         name: "id_cliente",
     })
-    clientId: number;
+    customerId: number;
 
     @Column("character varying", { name: "nom_razon", length: 100 })
     reasonName: string;

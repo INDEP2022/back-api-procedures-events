@@ -12,7 +12,7 @@ export class ComerLotesEntity {
     lotId: number;
 
     @Column("character varying", { name: "id_estatusvta", length: 4 })
-    idEstatusvta: string;
+    statusId: string;
 
     @Column("numeric", { name: "id_evento", precision: 7, scale: 0 })
     eventId: number;
@@ -28,7 +28,7 @@ export class ComerLotesEntity {
     description: string | null;
 
     @Column("numeric", { name: "valor_base", precision: 33, scale: 2 })
-    valorBase: string;
+    baseValue: number;
 
     @Column("numeric", {
         name: "no_transferente",
@@ -36,7 +36,7 @@ export class ComerLotesEntity {
         precision: 5,
         scale: 0,
     })
-    noTransferente: string | null;
+    transferenceId: number | null;
 
     @Column("numeric", {
         name: "id_cliente",
@@ -44,7 +44,7 @@ export class ComerLotesEntity {
         precision: 7,
         scale: 0,
     })
-    clientId: string | null;
+    customerId: number | null;
 
     @Column("numeric", {
         name: "precio_avaluo_ref",

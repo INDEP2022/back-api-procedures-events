@@ -28,7 +28,7 @@ export class SaveExcelService {
         const found = await this.comerLotesRepository
             .createQueryBuilder("comer_lotes")
             .innerJoin(ComerBienesxloteEntity,"comer_bienesxlote","comer_lotes.lotId = comer_bienesxlote.lotId")
-            .innerJoin(ComerClientesEntity,"comer_clientes","comer_lotes.clientId = comer_clientes.clientId")
+            .innerJoin(ComerClientesEntity,"comer_clientes","comer_lotes.customerId = comer_clientes.customerId")
             .select([
                 "comer_lotes.REFERENCIAL",
                 "comer_lotes.LOTE_PUBLICO",
