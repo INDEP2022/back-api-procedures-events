@@ -32,6 +32,7 @@ import { QueryGeneralEventsModule } from './modules/sera/query-general-events/qu
 import { UpdateAssetsTempModule } from './modules/sera/update-assets-temp/update-assets-temp.module';
 import { SaveExcelModule } from './modules/sera/save-excel/save-excel.module';
 import { TemporaryFillingComerNopubModule } from './modules/sera/temporary-filling-comer-nopub/temporary-filling-comer-nopub.module';
+import { GetLotsOrThirdlotsModule } from './modules/sera/get-lots-or-thirdlots/get-lots-or-thirdlots.module';
 
 @Module({
   imports: [
@@ -94,6 +95,7 @@ import { TemporaryFillingComerNopubModule } from './modules/sera/temporary-filli
       UpdateAssetsTempModule,
       SaveExcelModule,
       TemporaryFillingComerNopubModule,
+      GetLotsOrThirdlotsModule,
 //Modules
   ],
 
