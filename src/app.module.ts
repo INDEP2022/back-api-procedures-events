@@ -33,6 +33,7 @@ import { UpdateAssetsTempModule } from './modules/sera/update-assets-temp/update
 import { SaveExcelModule } from './modules/sera/save-excel/save-excel.module';
 import { TemporaryFillingComerNopubModule } from './modules/sera/temporary-filling-comer-nopub/temporary-filling-comer-nopub.module';
 import { GetLotsOrThirdlotsModule } from './modules/sera/get-lots-or-thirdlots/get-lots-or-thirdlots.module';
+import { GetEventInvoiceModule } from './modules/sera/get-event-invoice/get-event-invoice.module';
 
 @Module({
   imports: [
@@ -96,6 +97,7 @@ import { GetLotsOrThirdlotsModule } from './modules/sera/get-lots-or-thirdlots/g
       SaveExcelModule,
       TemporaryFillingComerNopubModule,
       GetLotsOrThirdlotsModule,
+      GetEventInvoiceModule,
 //Modules
   ],
 

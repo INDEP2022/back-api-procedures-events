@@ -10,7 +10,7 @@ import { ApiProperty } from "@nestjs/swagger";
 // @Index("isia205s1_comer_det", ["idEvento", "idFactura"], {})
 // @Index("isia205s2_comer_det", ["noBien"], {})
 @Entity("comer_detfacturas", { schema: "sera" })
-export class comerDetBillEntity {
+export class ComerDetBillEntity {
   @ApiProperty({example: 'No. Evento'})
   @PrimaryGeneratedColumn({
     name: "id_evento",
