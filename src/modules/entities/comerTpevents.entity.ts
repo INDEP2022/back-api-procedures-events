@@ -2,10 +2,10 @@ import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 import { ApiProperty } from "@nestjs/swagger";
 
 @Entity("comer_tpeventos", { schema: "sera" })
-export class ComerTpeventosEntity {
+export class ComerTpeventsEntity {
   @ApiProperty({example: 'No. Evento'})
   @PrimaryGeneratedColumn({
-  name: "id_tpevento"})
+    name: "id_tpevento"})
   eventTpId: number;
 
   @Column("character varying", { name: "descripcion", length: 30 })
@@ -27,7 +27,7 @@ export class ComerTpeventosEntity {
     precision: 2,
     scale: 0,
   })
-  idTipoDisp: string | null;
+  idTipoDisp: number | null;
 
   @Column("numeric", {
     name: "id_tipo_fallo",
@@ -35,6 +35,5 @@ export class ComerTpeventosEntity {
     precision: 2,
     scale: 0,
   })
-  idTipoFallo: string | null;
-
+  idTipoFallo: number | null;
 }

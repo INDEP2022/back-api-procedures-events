@@ -24,7 +24,7 @@ export class UpdateEventDto {
   eventDate?: string;
 
   @ApiProperty({ example: 'Costo Base' })
-  baseCost?: string;
+  baseCost?: number;
 
   @ApiProperty({ example: 'Id tercero comer' })
   thirdId?: number;

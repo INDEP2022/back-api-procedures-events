@@ -2,12 +2,12 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from "@nestjs/typeorm";
 import { LessThan, Repository } from "typeorm";
 
-import { ComerEventosEntity } from "../../entities/comerEventos.entity";
+import { ComerEventsEntity } from "../../entities/comerEvents.entity";
 
 @Injectable()
 export class MaxNumberService {
   constructor(
-    @InjectRepository(ComerEventosEntity) private readonly comerEventosRepository: Repository<ComerEventosEntity>,
+    @InjectRepository(ComerEventsEntity) private readonly comerEventosRepository: Repository<ComerEventsEntity>,
   ) {}
 
   async getMax() {

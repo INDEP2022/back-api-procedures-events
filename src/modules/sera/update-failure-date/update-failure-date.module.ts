@@ -2,11 +2,11 @@ import { Module } from '@nestjs/common';
 import { UpdateFailureDateService } from './update-failure-date.service';
 import { UpdateFailureDateController } from './update-failure-date.controller';
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { ComerEventosEntity } from "../../entities/comerEventos.entity";
+import { ComerEventsEntity } from "../../entities/comerEvents.entity";
 
 @Module({
   imports: [
-    TypeOrmModule.forFeature([ComerEventosEntity]),
+    TypeOrmModule.forFeature([ComerEventsEntity]),
   ],
   providers: [UpdateFailureDateService],
   controllers: [UpdateFailureDateController]

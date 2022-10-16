@@ -2,11 +2,11 @@ import { Module } from '@nestjs/common';
 import { GetEventStageService } from './get-event-stage.service';
 import { GetEventStageController } from './get-event-stage.controller';
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { ComerEventosTprocesoEntity } from "../../entities/comerEventosTproceso.entity";
+import { ComerEventsTprocessEntity } from "../../entities/comerEventsTprocess.entity";
 
 @Module({
   imports: [
-    TypeOrmModule.forFeature([ComerEventosTprocesoEntity]),
+    TypeOrmModule.forFeature([ComerEventsTprocessEntity]),
   ],
   providers: [GetEventStageService],
   controllers: [GetEventStageController]

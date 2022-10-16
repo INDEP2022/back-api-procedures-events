@@ -1,29 +1,29 @@
 import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
 
 @Entity("tmp_lotes_comer", { schema: "comer" })
-export class TmpLotesComerEntity {
+export class TmpLotsComerEntity {
     @PrimaryGeneratedColumn({ name: "id_lote" })
-    idLote: string;
+    lotId: string;
 
     @Column("character varying", {
         name: "id_estatusvta",
         nullable: true,
         length: 4,
     })
-    idEstatusvta: string | null;
+    vtaStatusId: string | null;
 
     @Column("numeric", { name: "id_evento", nullable: true })
-    idEvento: string | null;
+    eventId: number | null;
 
     @Column("numeric", { name: "lote_publico", nullable: true })
-    lotePublico: string | null;
+    publicLot: number | null;
 
     @Column("character varying", {
         name: "descripcion",
         nullable: true,
         length: 1250,
     })
-    descripcion: string | null;
+    description: string | null;
 
     @Column("numeric", {
         name: "valor_base",
@@ -31,10 +31,10 @@ export class TmpLotesComerEntity {
         precision: 33,
         scale: 2,
     })
-    valorBase: string | null;
+    baseValue: number | null;
 
     @Column("numeric", { name: "id_cliente", nullable: true })
-    idCliente: string | null;
+    customerId: number | null;
 
     @Column("numeric", {
         name: "precio_garantia",
@@ -42,16 +42,16 @@ export class TmpLotesComerEntity {
         precision: 11,
         scale: 2,
     })
-    precioGarantia: string | null;
+    warrantyPrice: number | null;
 
     @Column("numeric", { name: "cubrelotes", nullable: true })
-    cubrelotes: string | null;
+    lotCovers: number | null;
 
     @Column("timestamp without time zone", {
         name: "fecha_entrega",
         nullable: true,
     })
-    fechaEntrega: Date | null;
+    deliveryDate: Date | null;
 
     @Column("numeric", {
         name: "precio_final",
@@ -59,7 +59,7 @@ export class TmpLotesComerEntity {
         precision: 15,
         scale: 2,
     })
-    precioFinal: string | null;
+    finalPrice: number | null;
 
     @Column("numeric", {
         name: "iva_lote",
@@ -67,7 +67,7 @@ export class TmpLotesComerEntity {
         precision: 11,
         scale: 2,
     })
-    ivaLote: string | null;
+    lotTax: number | null;
 
     @Column("numeric", {
         name: "monto_app_iva",
@@ -75,7 +75,7 @@ export class TmpLotesComerEntity {
         precision: 15,
         scale: 2,
     })
-    montoAppIva: string | null;
+    appAmountTax: number | null;
 
     @Column("numeric", {
         name: "anticipo",
@@ -83,7 +83,7 @@ export class TmpLotesComerEntity {
         precision: 15,
         scale: 2,
     })
-    anticipo: string | null;
+    advance: number | null;
 
     @Column("numeric", {
         name: "monto_noapp_iva",
@@ -91,58 +91,58 @@ export class TmpLotesComerEntity {
         precision: 15,
         scale: 2,
     })
-    montoNoappIva: string | null;
+    appTaxAmountId: number | null;
 
     @Column("character varying", {
         name: "linea_captura",
         nullable: true,
         length: 25,
     })
-    lineaCaptura: string | null;
+    captureLine: string | null;
 
     @Column("numeric", { name: "estatus_sist", nullable: true })
-    estatusSist: string | null;
+    systemStatus: number | null;
 
     @Column("numeric", { name: "id_sist", nullable: true })
-    idSist: string | null;
+    systemId: number | null;
 
     @Column("character varying", {
         name: "eschatarra",
         nullable: true,
         length: 1,
     })
-    eschatarra: string | null;
+    scrap: string | null;
 
     @Column("character varying", {
         name: "dato_fisc_mand",
         nullable: true,
         length: 200,
     })
-    datoFiscMand: string | null;
+    dataFiscMand: string | null;
 
     @Column("numeric", { name: "no_delegacion", nullable: true })
-    noDelegacion: string | null;
+    delegationId: number | null;
 
     @Column("character varying", {
         name: "coordinacion_reg",
         nullable: true,
         length: 50,
     })
-    coordinacionReg: string | null;
+    regCoordination: string | null;
 
     @Column("numeric", { name: "no_transferente", nullable: true })
-    noTransferente: string | null;
+    transferenceId: number | null;
 
     @Column("character varying", {
         name: "desc_transferente",
         nullable: true,
         length: 150,
     })
-    descTransferente: string | null;
+    transferenceDiscId: string | null;
 
     @Column("character varying", { name: "direccion", nullable: true, length: 5 })
-    direccion: string | null;
+    address: string | null;
 
     @Column("character varying", { name: "act_lote", nullable: true, length: 1 })
-    actLote: string | null;
+    lotAct: string | null;
 }

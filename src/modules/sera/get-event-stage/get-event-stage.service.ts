@@ -1,12 +1,12 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from "@nestjs/typeorm";
-import { LessThan, Repository } from "typeorm";
-import { ComerEventosTprocesoEntity } from "../../entities/comerEventosTproceso.entity";
+import { Repository } from "typeorm";
+import { ComerEventsTprocessEntity } from "../../entities/comerEventsTprocess.entity";
 
 @Injectable()
 export class GetEventStageService {
   constructor(
-    @InjectRepository(ComerEventosTprocesoEntity) private readonly comerEventosTprocesoRepository: Repository<ComerEventosTprocesoEntity>,
+    @InjectRepository(ComerEventsTprocessEntity) private readonly comerEventosTprocesoRepository: Repository<ComerEventsTprocessEntity>,
 
   ) {}
   async getById( eventIdIn: number ) {
