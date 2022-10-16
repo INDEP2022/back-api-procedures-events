@@ -1,13 +1,13 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from "@nestjs/typeorm";
-import { ComerEventosEntity } from "../../entities/comerEventos.entity";
+import { ComerEventsEntity } from "../../entities/comerEvents.entity";
 import { Repository } from "typeorm";
 import { UpdateEventDto } from "./dto/update-event.dto";
 
 @Injectable()
 export class UpdateEventService {
   constructor(
-    @InjectRepository(ComerEventosEntity) private comerEventosRepository: Repository<ComerEventosEntity>,
+    @InjectRepository(ComerEventsEntity) private comerEventosRepository: Repository<ComerEventsEntity>,
   ) {}
 
   async  putEvent(idUpdate: number, updateEventDto:UpdateEventDto) {

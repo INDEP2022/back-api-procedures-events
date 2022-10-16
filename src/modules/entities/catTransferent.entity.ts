@@ -2,7 +2,7 @@ import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
 import {ApiProperty} from "@nestjs/swagger";
 
 @Entity("cat_transferente", { schema: "sera" })
-export class CatTransferenteEntity {
+export class CatTransferentEntity {
     @ApiProperty({ example: 'Identificador del transferente'})
     @PrimaryGeneratedColumn( {
         name: "no_transferente",

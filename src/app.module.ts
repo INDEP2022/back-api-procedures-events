@@ -14,9 +14,6 @@ import { EventIdentificationAdModule } from './modules/sera/event-identification
 import { QueryStage2EventModule } from './modules/sera/query-stage2-event/query-stage2-event.module';
 import { UpdateEventModule } from './modules/sera/update-event/update-event.module';
 import { UpdateFailureDateModule } from './modules/sera/update-failure-date/update-failure-date.module';
-import { UpdateAssetsTempModule } from './modules/sera/update-assets-temp/update-assets-temp.module';
-import { SaveExcelModule } from './modules/sera/save-excel/save-excel.module';
-import { TemporaryFillingComerNopubModule } from './modules/sera/temporary-filling-comer-nopub/temporary-filling-comer-nopub.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot( 
@@ -60,9 +57,6 @@ import { TemporaryFillingComerNopubModule } from './modules/sera/temporary-filli
       QueryStage2EventModule,
       UpdateEventModule,
       UpdateFailureDateModule,
-      UpdateAssetsTempModule,
-      SaveExcelModule,
-      TemporaryFillingComerNopubModule,
 //Modules
   ],
 

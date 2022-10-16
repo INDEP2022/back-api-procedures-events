@@ -14,7 +14,7 @@ import { ApiProperty } from "@nestjs/swagger";
 // @Index("isia041s1_bienes", ["noBien"], {})
 // @Index("bienes_pkey", ["noBien"], { unique: true })
 @Entity("bienes", { schema: "sera" })
-export class BienesEntity {
+export class GoodsEntity {
     @ApiProperty({example: 'No. Bien'})
     @PrimaryGeneratedColumn({
         name: "no_bien",

@@ -3,18 +3,18 @@ import { ApiProperty } from "@nestjs/swagger";
 
 
 @Entity("comer_usuxtpeventos", { schema: "sera" })
-export class ComerUsuxtpeventosEntity {
+export class ComerUsuxtpeventsEntity {
   @ApiProperty({example: 'No. Evento'})
   @PrimaryGeneratedColumn({ name: "id_tpevento"})
-  eventTpId: string;
+  eventTpId: number;
 
   @Column("character varying", { name: "usuario", length: 30 })
   user: string;
 
   @Column("character varying", { name: "usuario_registro", length: 30 })
-  usuarioRegistro: string;
+  userRegister: string;
 
-  @Column("date", { name: "fecha_registro" })
-  fechaRegistro: string;
+  @Column( {type: Date, name: "fecha_registro" })
+  registrationDate: Date;
 
 }
