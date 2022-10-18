@@ -14,6 +14,15 @@ import { EventIdentificationAdModule } from './modules/sera/event-identification
 import { QueryStage2EventModule } from './modules/sera/query-stage2-event/query-stage2-event.module';
 import { UpdateEventModule } from './modules/sera/update-event/update-event.module';
 import { UpdateFailureDateModule } from './modules/sera/update-failure-date/update-failure-date.module';
+import { GetThirdPartyLotsModule } from './modules/sera/get-third-party-lots/get-third-party-lots.module';
+import { GetThirdLotsModule } from './modules/sera/get-third-lots/get-third-lots.module';
+import { QueryLotsForSaleModule } from './modules/sera/query-lots-for-sale/query-lots-for-sale.module';
+import { QueryGeneralEventsModule } from './modules/sera/query-general-events/query-general-events.module';
+import { GetBeneficiarySpModule } from './modules/sera/get-beneficiary-sp/get-beneficiary-sp.module';
+import { GetFileProgModule } from './modules/sera/get-file-prog/get-file-prog.module';
+import { GetGoodsLabelModule } from './modules/sera/get-goods-label/get-goods-label.module';
+import { GetInventoryShipGoodModule } from './modules/sera/get-inventory-ship-good/get-inventory-ship-good.module';
+import { GetKeyReportTaxModule } from './modules/sera/get-key-report-tax/get-key-report-tax.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot( 
@@ -57,6 +66,15 @@ import { UpdateFailureDateModule } from './modules/sera/update-failure-date/upda
       QueryStage2EventModule,
       UpdateEventModule,
       UpdateFailureDateModule,
+      GetThirdPartyLotsModule,
+      GetThirdLotsModule,
+      QueryLotsForSaleModule,
+      QueryGeneralEventsModule,
+      GetBeneficiarySpModule,
+      GetFileProgModule,
+      GetGoodsLabelModule,
+      GetInventoryShipGoodModule,
+      GetKeyReportTaxModule,
 //Modules
   ],
 
